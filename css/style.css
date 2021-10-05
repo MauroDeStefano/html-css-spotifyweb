@@ -171,6 +171,7 @@ footer{
 
 .subjet{
   width: 15%;
+  margin: 0 10px;
 }
 
 .img-song img{
@@ -180,7 +181,6 @@ footer{
 .row{
   display: flex;
   margin: 0 30px;
-  justify-content: space-evenly;
 }
 
 .song-name{
@@ -195,3 +195,10 @@ footer{
   font-size: 14px;
   color: #7B7D82;
 }
+
+.title span{
+  margin: 30px;
+  color: #7B7D82;
+  margin-bottom: 50px;
+}
+
