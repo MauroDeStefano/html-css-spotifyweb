@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix{
@@ -11,39 +10,57 @@
   clear: both;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
 nav{
   float: left;
-  position:fixed;
   width: 250px;
   height: calc(100vh - 70px);
   background-color: black;
 }
 
+.banner-top{
+  width: calc(100% - 250px);
+  position: fixed;
+  background-color: rgba(0, 0, 0, .35);
+  height: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
 main{
-  width: calc(100vw -250px);
+  float: right;
+  width: calc(100% - 250px);
   height: calc(100vh - 70px);
   background-color: #141922;
   overflow: auto;
 }
 
 footer{
+  float: inline-end;
   height: 70px;
   width: 100%;
   background-color: #282828;
 }
 
+
 /************* ///GLOBAL ***************/
 /************* MAIN *****************/
 
-.upgrade{
-  width: 100%;
-  float: right;
-  background-color: rgba(0, 0, 0, .35);
-  height: 100px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
+
 
 .upgrade a{
   padding: 10px 35px;
@@ -58,5 +75,71 @@ footer{
 
 /*************** NAV BAR *****************/
 
+.logo{
+  height: 100px;
+  width: 100%;
+}
 
+.logo svg{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nav-btn{
+  width: 200px;
+  margin: 0 auto;
+}
+ .macro-nav{
+   line-height: 20px;
+ }
+
+.playlist{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  overflow:auto;
+}
+
+.playlist h3{
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.add-playlist{
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+#plus-btn{
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #A3A3A3;
+  text-align: center;
+}
+
+.nav-btn ul{
+  margin-top: 30px;
+  line-height: 40px;
+}
+
+.nav-btn.bottom{
+  justify-self: flex-end;
+}
+
+.install-btn{
+  border-bottom: 2px solid #494949;
+  padding: 10px 0;
+}
+
+.user{
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.content{
+  margin-top: 100px;
+}
 
