@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav{
+  float: left;
+  position:fixed;
+  width: 250px;
+  height: calc(100vh - 70px);
+  background-color: black;
+}
+
+main{
+  width: calc(100vw -250px);
+  height: calc(100vh - 70px);
+  background-color: #141922;
+  overflow: auto;
+}
+
+footer{
+  height: 70px;
+  width: 100%;
+  background-color: #282828;
+}
+
+/************* ///GLOBAL ***************/
+/************* MAIN *****************/
+
+.upgrade{
+  width: 100%;
+  float: right;
+  background-color: rgba(0, 0, 0, .35);
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.upgrade a{
+  padding: 10px 35px;
+  margin-right: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  border: white solid 3px;
+  color: white;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+/*************** NAV BAR *****************/
+
+
+
