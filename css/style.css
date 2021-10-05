@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.clearfix{
+.clearfix::after{
   content: "";
   display: table;
   clear: both;
@@ -132,10 +132,6 @@ footer{
   line-height: 40px;
 }
 
-.nav-btn.bottom{
-
-}
-
 .install-btn{
   border-bottom: 2px solid #494949;
   padding: 10px 0;
@@ -148,6 +144,54 @@ footer{
 /************* START CONTENT ***************/
 
 .content{
-  margin-top: 100px;
+  padding-top: 100px;
+  height: 100%;
+  width: 100%;
 }
 
+.menu{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.menu li{
+  display: inline-block;
+  margin: 20PX;
+  text-transform: uppercase;
+  color: #7B7D82;
+  font-weight: 600;
+}
+
+/* ROWS */
+
+.content h1{
+  margin: 30px;
+}
+
+.subjet{
+  width: 15%;
+}
+
+.img-song img{
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  margin: 0 30px;
+  justify-content: space-evenly;
+}
+
+.song-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.song-name span{
+  padding: 10px;
+  font-size: 14px;
+  color: #7B7D82;
+}
