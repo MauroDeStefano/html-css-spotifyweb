@@ -24,29 +24,39 @@ body{
   color: white;
 }
 
+.wrap{
+  width: 100vw;
+  height: 100vh;
+}
+
+main{ 
+  height: calc(100% - 70px);
+  width: 100%;
+}
+
 nav{
   float: left;
   width: 250px;
-  height: calc(100vh - 70px);
+  height: 100%;
   background-color: black;
 }
 
-.banner-top{
+.main-content{
+  float: left;
   width: calc(100% - 250px);
+  height: 100%;
+  background-color: #141922;
+  overflow: auto;
+}
+
+.banner-top{
   position: fixed;
-  background-color: rgba(0, 0, 0, .35);
+  width: calc(100% - 250px); 
   height: 100px;
+  background-color: rgba(0, 0, 0, .35);
   display: flex;
   justify-content: right;
   align-items: center;
-}
-
-main{
-  float: right;
-  width: calc(100% - 250px);
-  height: calc(100vh - 70px);
-  background-color: #141922;
-  overflow: auto;
 }
 
 footer{
@@ -85,10 +95,11 @@ footer{
   text-align: center;
 }
 
-.nav-btn{
+.nav-btn, .logo{
   width: 200px;
   margin: 0 auto;
 }
+
  .macro-nav{
    line-height: 20px;
  }
@@ -127,37 +138,41 @@ footer{
   text-align: center;
 }
 
-.nav-btn ul{
+.nav-btn-flex ul{
   margin-top: 30px;
   line-height: 40px;
+  margin-bottom: 50px;
+  height: 100%;
+  overflow: auto;
 }
 
-.install-btn{
+/* .install-btn{
   border-bottom: 2px solid #494949;
   padding: 10px 0;
-}
+} */
 
-.user{
+/* .user{
   font-weight: 600;
-}
+} */
 
 /************* START CONTENT ***************/
 
-.content{
-  padding-top: 100px;
-  height: 100%;
+.menu{
   width: 100%;
+  padding-top: 100px;
+  margin-left: 30px;
 }
 
-.menu{
+.menu ul{
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  width: 100%;
   justify-content: space-around;
 }
 
-.menu li{
+.menu ul li{
   display: inline-block;
-  margin: 20PX;
+  margin: 20px;
   text-transform: uppercase;
   color: #7B7D82;
   font-weight: 600;
@@ -165,13 +180,17 @@ footer{
 
 /* ROWS */
 
-.content h1{
+.channels {
+
+}
+
+.title{ 
   margin: 30px;
 }
 
 .subjet{
-  width: 15%;
-  margin: 0 10px;
+  width: 13%;
+  margin-right: 20px;
 }
 
 .img-song img{
@@ -201,4 +220,10 @@ footer{
   color: #7B7D82;
   margin-bottom: 50px;
 }
+
+.artist{
+  border-radius: 50%;
+}
+
+/* FOOTER */
 
