@@ -14,12 +14,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>My Spotify</title>
 
 </head>
 
 <body>
   <div class="wrap clearfix">
+
     <main class="clearfix">
       <nav>
 
@@ -231,7 +233,50 @@
 
   
     </main>
-    <footer>
+
+    <footer class="flex-footer">
+
+      <div class="left-foot">
+        <div class="img-foot">
+          <img src="img/sinister.jpeg" alt="">
+        </div>
+        <div class="name-song-foot">
+          <h3>Sinister</h3>
+          <span>Brano Nome</span>
+          
+        </div>
+        <div>
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
+
+      <div class="center-foot">
+        <div class="selectors">
+          <a href="#"><i class="fas fa-random"></a></i>
+          <a href="#"><i class="fas fa-step-backward"></a></i>
+          <a href="#"><i class="far fa-play-circle"></a></i>
+          <a href="#"><i class="fas fa-step-forward"></a></i>
+          <a href="#"><i class="fas fa-redo-alt"></a></i>
+        </div>
+
+        <div class="timing">
+          <span>0:25</span>
+          <div class="total-song">
+            <div></div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+
+      <div class="right-foot">
+        <div class="volume">
+          <div class="actual-volume"></div>
+        </div>
+        <i class="fas fa-volume-up"></i>    
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-list-ul"></i>
+      </div>
 
     </footer>
   </div>

@@ -25,7 +25,7 @@ body{
 }
 
 .wrap{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -210,13 +210,13 @@ footer{
 }
 
 .song-name span{
-  padding: 10px;
+  line-height: 35px;
   font-size: 14px;
   color: #7B7D82;
 }
 
 .title span{
-  margin: 30px;
+  line-height: 35px;
   color: #7B7D82;
   margin-bottom: 50px;
 }
@@ -227,3 +227,112 @@ footer{
 
 /* FOOTER */
 
+.flex-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-foot{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 70%;
+  margin: auto 0 auto 10px;
+}
+
+.img-foot{
+  height: 100%;
+}
+
+.name-song-foot{
+  font-size: 12px;
+  margin-right: 30px;
+  margin-left: 15px;
+  line-height: 14px;
+}
+
+.left-foot img{
+  height: 100%;
+}
+
+.center-foot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.right-foot{
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+/* /////////general footer */
+/* LEFT FOOTER */
+
+.name-song-foot span, .left-foot div i{
+  color: #858585;
+}
+
+.left-foot div i{
+  margin-left: 10px;
+}
+
+/* /////////LEFT FOOTER */
+
+.center-foot i{
+  font-size: 25px;
+}
+
+.far.fa-play-circle{
+  font-size: 35px;
+}
+
+.timing{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.timing div{
+  width: 80%;
+  height: 6px;
+  background-color: #5B5B5B ;
+}
+
+.total-song div{
+  width: 10%;
+  height: 100%;
+  background-color: #C5C5C5;
+  border-radius: 3px;
+}
+
+/* //////////CENTER FOOT */
+/* RIGHT FOOT */
+.volume{
+  width: 150px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #4F4F4F;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.actual-volume{
+  width: 30px;
+  height: 100%;
+  background-color: #C1C1C1;
+  border-radius: 3px;
+}
+
+.right-foot i{
+  margin: 0 10px;
+}
