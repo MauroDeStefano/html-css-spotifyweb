@@ -210,16 +210,17 @@ footer{
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 
 .menu ul li a{
   display: inline-block;
-  margin: 20px;
+  /* margin: 20px; */
   text-transform: uppercase;
   color: #7B7D82;
   font-weight: 600;
+  font-size: 12px;
 }
 
 .macro-nav ul li a, .macro-nav ul li {
@@ -479,7 +480,7 @@ ul li:hover a {
     flex-wrap: wrap;
   }
   .subjet{
-    width: 22%;
+    width: 18%;
   }
   .menu ul{
     flex-wrap: wrap;
