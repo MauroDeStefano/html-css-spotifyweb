@@ -74,18 +74,26 @@ footer{
 /*************** ///GLOBAL ***************/
 /****************** MAIN *****************/
 
-
+.logo-small{
+  position: absolute;
+  width: 25px;
+  transform: translate(0, 5px);
+  display: none;
+}
 
 .upgrade a{
   padding: 10px 35px;
-  margin-right: 50px;
+  margin-right: 100px;
   text-decoration: none;
   font-weight: 700;
   border: white solid 3px;
   color: white;
   border-radius: 25px;
   text-transform: uppercase;
+}
 
+.upgrade:hover{
+  transform: scale(105%);
 }
 
 /****************** NAV BAR *****************/
@@ -111,9 +119,14 @@ footer{
   /* line-height: 20px; */
 }
 
+.nav-btn-flex li a{
+  color: #767676;
+}
+
 .nav-btn svg{
   width: 20px;
   vertical-align: middle;
+  color: #797979;
 }
 
 .user svg{
@@ -128,13 +141,15 @@ footer{
   line-height: 25px;
 }
 
- .macro-nav svg{
+.macro-nav svg{
   width: 25px;
   vertical-align: middle;
 }
 
 .macro-playlist{
   height: calc(100% - 200px);
+  min-height: 200px;
+  overflow: hidden;
 }
 
 .playlist h3{
@@ -155,20 +170,26 @@ footer{
   height: 40px;
   background-color: #A3A3A3;
   text-align: center;
+  color: black;
+}
+
+.list{
+  height: 34vh;
+  min-height: 130px;
+  overflow: auto;
 }
 
 .nav-btn-flex ul{
   margin-top: 30px;
   line-height: 40px;
   margin-bottom: 50px;
-  height: 100%;
-  overflow: auto;
 }
 
 .install-btn{
   border-bottom: 2px solid #494949;
   padding: 10px 0;
 }
+
 
 .user{
   width: 100%;
@@ -190,9 +211,10 @@ footer{
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+
 }
 
-.menu ul li{
+.menu ul li a{
   display: inline-block;
   margin: 20px;
   text-transform: uppercase;
@@ -200,6 +222,13 @@ footer{
   font-weight: 600;
 }
 
+.macro-nav ul li a, .macro-nav ul li {
+  color: #797979;
+}
+
+.menu ul li:hover a{
+  color: white;
+}
 /***************** ROWS **************/
 
 .title{ 
@@ -226,7 +255,7 @@ footer{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 50px;
 }
 
 .overlay-img{
@@ -266,6 +295,10 @@ footer{
   border-radius: 50%;
 }
 
+.song-name:hover{
+  cursor: pointer;
+}
+
 /************ FOOTER ************/
 
 .flex-footer{
@@ -276,9 +309,11 @@ footer{
 .left-foot{
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 230px;
   height: 70%;
-  margin: auto 0 auto 10px;
+  margin: auto 0;
+  justify-content: space-around;
+  margin-left: 10px;
 }
 
 .img-foot{
@@ -287,13 +322,14 @@ footer{
 
 .name-song-foot{
   font-size: 12px;
-  margin-right: 30px;
-  margin-left: 15px;
+  /* margin-right: 30px;
+  margin-left: 15px; */
   line-height: 14px;
 }
 
 .left-foot img{
-  height: 100%;
+  height: 100%; 
+  margin-right: 5px;
 }
 
 .center-foot{
@@ -312,6 +348,15 @@ footer{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  justify-content: space-around;
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
 }
 
 /********* /////////general footer ***********/
@@ -321,19 +366,19 @@ footer{
   color: #858585;
 }
 
-.left-foot div i{
-  margin-left: 10px;
+.name-song-foot:hover span, .left-foot div i{
+  cursor: pointer;
 }
 
 /********** /////////LEFT FOOTER **************/
 
 .center-foot i{
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 10px;
 }
 
-.far.fa-play-circle{
-  font-size: 35px;
+.selectors .far.fa-play-circle{
+  font-size: 25px;
 }
 
 .timing{
@@ -345,28 +390,49 @@ footer{
   font-weight: 600;
 }
 
-.timing div{
+.timing .total-song{
+  position: relative;
   width: 80%;
   height: 6px;
   background-color: #5B5B5B ;
+  border-radius: 5px;
 }
 
-.total-song div{
+.total-song .right-time{
   width: 10%;
   height: 100%;
   background-color: #C5C5C5;
   border-radius: 3px;
 }
 
+.right-time{
+  position: relative;
+}
+
+.total-song .circle{
+  top: -4px;
+  right: -3px;
+  visibility: hidden;
+}
+
+.total-song:hover .right-time{
+  background-color: #70b137;
+}
+
+.total-song:hover .circle{
+  visibility: visible;
+}
+
 /* //////////CENTER FOOT */
 /* RIGHT FOOT */
+
 .volume{
-  width: 150px;
+  position: relative;
+  width: 50%;
   height: 6px;
   border-radius: 3px;
   background-color: #4F4F4F;
-  margin-right: 20px;
-  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .actual-volume{
@@ -376,8 +442,28 @@ footer{
   border-radius: 3px;
 }
 
+.volume .circle{
+  top: -4px;
+  left: 20px;
+  visibility: hidden;
+}
+
 .right-foot i{
-  margin: 0 10px;
+  /* margin: 0 10px; */
+}
+
+.volume:hover .actual-volume{
+  background-color: #70b137;
+}
+
+.volume:hover .circle{
+  visibility: visible;
+}
+
+/************** GENERAL HOVER ***************/
+
+ul li:hover a {
+  color: white;
 }
 
 /************** RESPONSIVE ******************/
@@ -386,5 +472,86 @@ footer{
   .flex-footer{
     position: fixed;
   }
+}
+
+@media screen and (max-width:1199px){
+  .row{
+    flex-wrap: wrap;
+  }
+  .subjet{
+    width: 22%;
+  }
+  .menu ul{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:767px){
+  .subjet{
+    width: 40%;
+  }
+   .subjet:nth-of-type(5), .subjet:nth-of-type(6){
+    display: none;
+  }
+  .right-foot{
+    width: 25%;
+  }
+  .left-foot{
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width:575px){
+   .subjet:nth-of-type(3), .subjet:nth-of-type(4){
+    display: none;
+  }
   
+  .upgrade a{
+    margin: 2px;
+    font-size: 12px;
+  }
+
+  nav{
+    width: 35px;
+    padding: 0 px;
+    padding-left: 5px;
+  }
+  .main-content, .banner-top{
+    width: calc(100% - 35px);
+  }
+
+  .menu ul{
+    width: 100%;
+  }
+
+  .subjet{
+    width: 42%;
+  }
+    
+  .logo svg, .playlist, .install-btn a{
+    display: none;
+  }
+
+  .install-btn{
+    border: none;
+  }
+
+  .install-btn svg{
+    position: relative;
+    transform: translate(2px, 8px);
+    border: none;
+  }
+
+  .user svg{
+    position: relative;
+    transform: translate(-5px ,0);
+  }
+
+  .left-foot i, .right-foot i{
+    font-size: 10px;
+  }
+
+  .logo-small{display: block;
+  }
 }
